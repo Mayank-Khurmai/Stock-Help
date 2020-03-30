@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Stock-Help Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main2.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/speech.js"></script>
+</head>
+<body>
+
+
+
+<!--Side Microphone Coding Start-->
+
+<div id="mike-div"> 
+        <i class="fa fa-microphone" id="mike-div-mike"></i>
+    </div>
+
+<!--Side Microphone Coding End-->
+
+
+<!-- Nav bar Coding Start-->
+<div class="container-fluid top-menu p-0" style="position: fixed; top: 0; z-index: 5; background-color: whitesmoke;">
+
+        <nav class="navbar navbar-expand-md">
+
+            <div class="float-left">
+                <a href="#" class="google-black-font ml-lg-5">Stock-Help</a>
+            </div>
+            
+            <i class="fa fa-bars navbar-toggler text-primary ml-auto float-right" data-toggle="collapse" data-target="#open-menu" style="font-size:60px"></i>
+
+            <div class="collapse navbar-collapse justify-content-end mr-lg-5" id="open-menu"> 
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#aboutus" id="aboutuslink" class="nav-link">About us</a></li>
+                    <li class="nav-item"><a href="#contactus" id="contactuslink" class="nav-link">Contact Us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="#mymodal" id="loginsignuplink" data-toggle="modal" class="nav-link">Login/Signup</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" id="servicesuslink" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu">
+                                <ul class="list-inline mx-3">
+                                        <li><a href="#">Manage Stock</a></li>
+                                        <li><a href="#">Waste Reduction</a></li>
+                                        <li><a href="#">Stock Expiration</a></li>
+                                </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+</div>
+<!-- Nav bar Coding End-->
+
+
+
+<!-- Section Coding Start-->
+<div class="row mx-2" style="margin-top: 90px;" id="home">
+
+    <div class="col-lg-8">
+        <div class="container text-center border">
+            <div id="slider" class="carousel slide" data-ride="carousel" data-interval="2000">
+                <ol class="carousel-indicators slider-ol-res">
+                    <li data-target="#slider active" data-slide-to="0"></li>
+                    <li data-target="#slider" data-slide-to="1"></li>
+                    <li data-target="#slider" data-slide-to="2"></li>
+                    <li data-target="#slider" data-slide-to="3"></li>
+                </ol>
+
+                <div class="carousel-inner" width="58">
+                    <div class="carousel-item active">
+                        <img src="images/aa.jpg" class="slider-img-res">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/bb.jpg" class="slider-img-res">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/cc.jpg" class="slider-img-res">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/dd.jpg" class="slider-img-res">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="col-lg-4 bg-light px-lg-5 px-sm-4">
+            <h3 class="text-center m-3 google-black-font exp-more text-warning">News Update</h3>
+                <div class="mx-auto text-center border border-5 p-0 h-sm-50" style="overflow : hidden; height: 500px;" id="news-div">
+                    <marquee direction="up" scrolldelay="300" behavior="alternate">
+                        <ul class="my-3 mx-0" style="list-style: none; text-align: left;">
+                                <li>Purchase</li>
+                                <hr color="red">
+                                <li>Pick Up<sup class="sup">*</sup></li>
+                                <hr color="red">
+                                <li>Jan Dhan Youjna<sup class="sup">*</sup></li>
+                                <hr color="red">
+                                <li>Agricultural Scheme</li>
+                                <hr color="red">
+                                <li>Swach Yojna</li>
+                                <hr color="red">
+                                <li>Jan Dhan Youjna<sup class="sup">*</sup></li>
+                                <hr color="red">
+                                <li>Swach Yojna</li>
+                                <hr color="red">
+                                <li>Jan Dhan Youjna</li>
+                                <hr color="red">
+                                <li>Swach Yojna</li>
+                                <hr color="red">
+                                <li>Jan Dhan Youjna<sup class="sup">*</sup></li>
+                                <hr color="red">
+                                <li>Swach Yojna</li>
+                                <hr color="red">
+                                <li>Jan Dhan Youjna</li>
+                                <hr color="red">
+                                <li>Swach Yojna</li>
+                                <hr color="red">
+                                <li>Jan Dhan Youjna<sup class="sup">*</sup></li>
+                                <hr color="red">
+                                <li>Swach Yojna</li>
+                                <hr color="red">
+                                <li>Jan Dhan Youjna</li>
+                            </ul>
+                        </marquee>
+                </div>
+        </div>
+    </div>
+
+</div>
+<!-- Section Coding End-->
+
+
+
+
+<!-- About Us Coding Start-->
+
+<div class="text-center about-us-bg-div my-5" id="aboutus">
+<h2>About Us</h2>
+<div class="media px-3 flex-column flex-lg-row">
+    <img src="images/about-img.png" class="align-self-center  about-img my-2">
+    <div class="media-body text-center mt-2">
+        <p class="text-justify mx-4">A local marketplace for surplus grocery items. #winwinwin
+Grocery store food items that are not sold and approaching their best before dates by up to 2 weeks, are simply thrown out. We give grocery stores a way to sell these items on the Flashfood app. Savvy shoppers can buy items at 50% off through the app and then pick them up in store.</p>
+        <p class="text-justify mx-4">A local marketplace for surplus grocery items. #winwinwin
+Grocery store food items that are not sold and approaching their best before dates by up to 2 weeks, are simply thrown out. We give grocery stores a way to sell these items on the Flashfood app. Savvy shoppers can buy items at 50% off through the app and then pick them up in store.</p>
+<p class="text-justify mx-4">A local marketplace for surplus grocery items. #winwinwin
+Grocery store food items that are not sold and approaching their best before dates by up to 2 weeks, are simply thrown out. We give grocery stores a way to sell these items on the Flashfood app. Savvy shoppers can buy items at 50% off through the app and then pick them up in store.</p>
+        </div>
+</div>
+</div>
+
+<!-- About Us Coding End-->
+
+
+
+<!-- COntact Us Coding Start-->
+
+<div class="text-center about-us-bg-div my-5" id="contactus">
+     <h2>Contact Us</h2>
+     <div class="row m-0 p-0">
+             <div class="col-md-2 mb-2">
+                    <i class="fa fa-phone" style="font-size:120px;color:#311a1a;"></i>
+             </div>
+             <div class="col-md-5 mb-2 text-justify">
+                    <ul style="list-style: none; color: black;" class="p-0">
+                            <li><b>Office of Joint Secretary (Sanitation)</b></li>
+                            <li>Ministry of Drinking Water and Sanitation,</li>
+                            <li>Government of India,</li>
+                            <li>4th Floor, Pt. Deendayal Antyodaya Bhawan</li>
+                            <li>CGO Complex, Lodhi Road,</li>
+                            <li>New Delhi - 110003.</li>
+                        </ul>
+             </div>
+             <div class="col-md-5 mb-2 text-justify">
+                    <ul style="list-style: none; color:black;" class="p-0">
+                            <li><b>Office of Director (Sanitation)</b></li>
+                            <li>Ministry of Agriculture,</li>
+                            <li>Government of India,</li>
+                            <li>12th Floor, Pt. Deendayal Antyodaya Bhawan</li>
+                            <li>CGO Complex, Lodhi Road,</li>
+                            <li>New Delhi - 110003.</li>
+                        </ul>
+             </div>
+
+     </div>
+        
+</div>
+
+
+<!-- Contact Us Coding End-->
+
+
+
+<!-- Footer Coding Start-->
+
+<footer class="jumbotron bg-primary mb-0 rounded-0 mt-2 pb-2" id="footer">
+
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="row">
+                <div class="col-md-4">
+                        <ul style="list-style: none; color: white;">
+                                <li id="li-heading">Mission</li>
+                                <li>Reduce Stock Lost</li>
+                                <li>Remind Expiration</li>
+                                <li>Outdated Solution</li>
+                                <li>Customer Finder</li>
+                                <li>Profit Maker</li>
+                            </ul>
+                </div>
+                <div class="col-md-4">
+                        <ul style="list-style: none; color: white;">
+                                <li id="li-heading">Features Websites</li>
+                                <li><a href="#" class="anchor">indiasales.gov.in</a></li>
+                                <li><a href="#" class="anchor">missionstock.gov.in</a></li>
+                                <li><a href="#" class="anchor">urbanstock.in</a></li>
+                            </ul>
+                </div>
+                <div class="col-md-4">
+                        <ul style="list-style: none; color: white;">
+                                <li id="li-heading">Services</li>
+                                <li>Stock Management</li>
+                                <li>Expiration</li>
+                                <li>Campaining</li>
+                            </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+                <div class="row">
+                    
+                    <div class="col-12 p-1">
+                            <div class="mapouter mx-auto" style="border: 5px solid black;"><div class="gmap_canvas"><iframe width="310" height="190" id="gmap_canvas" src="https://maps.google.com/maps?q=ajay%20kumar%20garg%20eng&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:200px;width:320px;}.gmap_canvas {overflow:hidden;background:none!important;height:190px;width:310px;}</style></div>
+
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+    <div class="text-center mt-3">
+            <span class="mt-4 mt-lg-0" style=" color: white;">&copy;2020 Copyright : Stock-Help Web Portal</span>
+    </div>
+
+</footer>
+
+<!-- Footer Coding End-->
+
+
+
+
+<!-- Modal Coding Start-->
+
+<div class="modal" id="mymodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-light">
+                    Login/Register to Explore more..
+                    <i class="fa fa-times ml-auto" data-dismiss="modal" style="font-size: 30px; color: red; cursor: pointer;"></i>
+                </div>
+                <div class="modal-body p-0 m-0">
+                        <div class="container-fluid">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item"><a href="#login" class="nav-link active" data-toggle="tab">Login</a></li>
+                                    <li class="nav-item"><a href="#register" class="nav-link" data-toggle="tab">Register</a></li>
+                                </ul>
+                    
+                                <div class="tab-content">
+                                    
+                                    <div id="login" class="container tab-pane active mt-3">
+                                       
+                                        <form>
+                                        <div class="input-group  my-4">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    <i class="fa fa-user" style="font-size: 30px;"></i>
+                                                </span>
+                                             </div>
+                                            <input type="text" name="username" class="form-control" placeholder="Username or Email" required="required">
+                                        </div>
+                    
+                                        <div class="input-group my-4">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="fa fa-key" style="font-size: 30px;"></i>
+                                                    </span>
+                                                 </div>
+                                                <input type="password" name="username" class="form-control" placeholder="Password" required="required">
+                                            </div>
+                                            
+                                             <input type="submit" value="Login" class="form-control mb-4" style="width: 35%; float: right;">
+                                    </form>
+                                    </div>
+                    
+                                    <div id="register" class="container tab-pane pb-4">
+                                            <form>
+                                            <div class="input-group  my-4">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">
+                                                            <i class="fa fa-user" style="font-size: 30px;"></i>
+                                                        </span>
+                                                     </div>
+                                                    <input type="text" id="username" oninput="checkname();" class="form-control" placeholder="Full Name" required="required">
+                                                    <span id="spanname"></span>
+                                                </div>
+
+                                                <div class="input-group my-4">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">
+                                                                <i class="fa fa-envelope" style="font-size: 30px;"></i>
+                                                            </span>
+                                                         </div>
+                                                        <input type="email" id="useremail" oninput="checkemail();" class="form-control" placeholder="Email" required="required">
+                                                        <span id="spanemail"></span>
+                                                </div>
+
+                                                <div class="input-group my-4">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">
+                                                                <i class="fa fa-phone" style="font-size: 30px;"></i>
+                                                            </span>
+                                                         </div>
+                                                        <input type="number" id="usernumber" oninput="checknumber();" class="form-control" placeholder="Mobile Number" required="required">
+                                                        <span id="spannumber"></span>
+                                               </div>
+
+                                                <div class="input-group my-4">
+                                                        <div class="input-group-prepend">
+                                                                <span class="input-group-text">
+                                                                    <i class="fa fa-user" style="font-size: 30px;"></i>
+                                                                </span>
+                                                        </div>
+                                                    <span class="mx-md-4 py-2 radio-input-span form-control"><input type="radio" checked id="male" required="required" name="usergender">&nbsp;Male</span>
+                                                    <span class="mx-md-4 py-2 radio-input-span form-control"><input type="radio" id="female" required="required" name="usergender">&nbsp;Female</span>
+                                            
+                                                   </div>
+                                                
+
+                                                <div class="input-group my-4" required>
+                                                        
+                                                        <select id="userstate" class="form-control">
+                                                                <option value="">Select State</option>
+                                                                <option value="Delhi">Delhi</option>
+                                                                <option value="Punjab">Punjab</option>
+                                                                <option value="Rajasthan">Rajasthan</option>
+                                                                <option value="Kashmir">Kashmir</option>
+                                                                <option value="Laddhak">Laddhak</option>
+                                                                <option value="Assam">Assam</option>
+                                                                <option value="Mizoram">Mizoram</option>
+                                                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                                                <option value="Goa">Goa</option>
+                                                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                                                <option value="Kerala">Kerala</option>
+                                                                <option value="West Bengal">West Bengal</option>
+                                                                <option value="Karnatka">Karnatka</option>
+                                                                <option value="Maharastra">Maharastra</option>
+                                                                <option value="Haryana">Haryana</option>
+                                                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                                                <option value="Gujarat">Gujarat</option>
+                                                                <option value="Chattisgarh">Chattisgarh</option>
+                                                                <option value="Uttrakhand">Uttrakhand</option>
+                                                                <option value="Jharkhand">Jharkhand</option>
+                                                                <option value="Sikkhim">Sikkhim</option>
+                                                                <option value="Meghalaya">Meghalaya</option>
+                                                                <option value="Telangana">Telangana</option>
+                                                        </select>
+
+                                                        <select class="form-control" id="userdistrict">
+                                                                <option value="">District</option>
+                                                                <option value="Ghaziabad">Ghaziabad</option>
+                                                                <option value="Saharnpur">Saharnpur</option>
+                                                                <option value="Aligarh">Aligarh</option>
+                                                                <option value="Hapur">Hapur</option>
+                                                            </select>
+                                                        
+                                                </div>
+                            
+                                                <div class="input-group my-4">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">
+                                                                <i class="fa fa-key" style="font-size: 30px;"></i>
+                                                            </span>
+                                                         </div>
+                                                        <input type="password" id="userpass" oninput="checkpass();" class="form-control" placeholder="Password" required="required">
+                                                        <span id="spanpass"></span>
+                                                </div>
+
+                                                <div class="input-group my-4">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">
+                                                                <i class="fa fa-key" style="font-size: 30px;"></i>
+                                                            </span>
+                                                         </div>
+                                                        <input type="password" id="usercpass" oninput="checkpass();" class="form-control" placeholder=" Confirm Password" required="required">
+                                                        <span id="spancpass"></span>
+                                               </div>
+                                               
+                                                <input type="submit" value="Register" id="register-btn"  class="form-control mb-4" style="width: 35%; float: right; cursor: pointer;">
+                                            </form>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Coding End-->
+
+
+
+
+<script>
+
+
+function checkpass()
+{
+    var a = document.getElementById("userpass").value;
+    var b = document.getElementById("usercpass").value;
+    if( a == b)
+    {
+        document.getElementById("spanpass").innerHTML = "<i class='fa fa-check'></i>";
+        document.getElementById("spancpass").innerHTML = "<i class='fa fa-check'></i>";
+    }
+    else
+    {
+        document.getElementById("spancpass").innerHTML = "<i class='fa fa-times'></i>";
+        document.getElementById("spanpass").innerHTML = "<i class='fa fa-check'></i>";
+    }
+}
+
+
+
+function checkname()
+{
+    var a = document.getElementById("username").value;
+    if( a == "")
+    {
+        document.getElementById("spanname").innerHTML = "<i class='fa fa-times'></i>";
+    }
+    else
+    {
+        document.getElementById("spanname").innerHTML = "<i class='fa fa-check'></i>";
+    }
+}
+
+
+function checknumber()
+{
+    var a = document.getElementById("usernumber").value;
+    if( a == "")
+    {
+        document.getElementById("spannumber").innerHTML = "<i class='fa fa-times'></i>";
+    }
+    else
+    {   
+        if(a.length<10)
+        {
+            document.getElementById("spannumber").innerHTML = "<i class='fa fa-times'></i>";
+        }
+        else
+        {
+            document.getElementById("spannumber").innerHTML = "<i class='fa fa-check'></i>";
+        }
+        
+    }
+}
+
+
+function checkemail()
+{
+    var a = document.getElementById("useremail").value;
+    if( a == "")
+    {
+        document.getElementById("spanemail").innerHTML = "<i class='fa fa-times'></i>";
+    }
+    else
+    {
+        $("#useremail").on("change", function(){
+        var mailcheck = $("#useremail").val();
+        $.ajax({
+            type : "POST",
+            url : "php/checkuser.php",
+            data : {
+                    checkemail : mailcheck
+                    },
+            success : function(event){
+                         $("#spanemail").html(event);
+                    }
+        });
+    });
+    }
+}
+
+
+
+$(document).ready(function(){
+    $("#register-btn").on("click", function(){
+        var username = $("#username").val();
+        var useremail = $("#useremail").val();
+        var usernumber = $("#usernumber").val();
+        var usergender= "Male";
+        if(document.getElementById("female").checked == true)
+        {
+            usergender = "Female";
+        }
+        var userstate = $("#userstate").val();
+        var userdistrict = $("#userdistrict").val();
+        var userpass= $("#userpass").val();
+        var usercpass = $("#usercpass").val();
+        if(username != "")
+         {
+            if(useremail != "")
+            {
+                if(usernumber !="")
+                {
+                    if( userstate !="")
+                    {
+                        if(userdistrict != "")
+                        {
+                            if(userpass != "")
+                            {
+                                if(usercpass != "")
+                                {
+                                        $.ajax({
+                                            type : "POST",
+                                            url : "php/register.php",
+                                            data : {
+                                                    username : username,
+                                                    useremail : useremail,
+                                                    usernumber : usernumber,
+                                                    usergender : usergender,
+                                                    userstate : userstate,
+                                                    userdistrict : userdistrict,
+                                                    userpass : userpass
+                                                    },
+                                            success : function(event){
+                                                        alert(event);
+                                                     }
+                                        });
+                                }
+                                else
+                                {
+                                    document.getElementById("usercpass").focus;
+                                    document.getElementById("usercpass").style.borderColor = "red";
+                                }
