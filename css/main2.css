@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+    }
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: red;
+    }
+
+.google-black-font{
+    font-family: 'Black Ops One', cursive;
+    font-size: 30px;
+    }
+
+.top-menu{
+    background-color: rgba(255,255,255,0.1);
+    box-shadow:0px 8px 8px 0px #ddd;
+    }
+    
+#li-heading{
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        font-family: sans-serif;
+        line-height: 40px;
+    }
+
+.anchor{
+    text-decoration: none;
+    color: white;
+    }
+
+.about-img{
+    width: 25%;
+    }
+
+.about-us-bg-div{
+    background-color: aquamarine;
+    }
+
+.sup{
+    color: red; 
+    font-weight: bold; 
+    font-size: 15px;
+    }
+
+#mike-div{
+        background-color: rgb(109, 216, 202);
+        width: 80px;
+        height: 85px;
+        border: 2px inset black;
+        border-top-right-radius: 20%;
+        border-bottom-right-radius: 20%;
+        position: fixed;
+        top: 50%;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+#mike-div-mike{
+    font-size: 70px; 
+    margin: 10%;
+    }
